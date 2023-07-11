@@ -1,9 +1,9 @@
 var countries = [
-  { name: "Afghanistan", flag: "flags/af.png" },
-  { name: "Albania", flag: "flags/al.png" },
-  { name: "Algeria", flag: "flags/dz.png" },
-  { name: "Andorra", flag: "flags/ad.png" },
-  { name: "Angola", flag: "flags/ao.png" },
+  { name: "Malaysia", flag: "flags/my.png" },
+  { name: "Indonesia", flag: "flags/id.png" },
+  { name: "Singapore", flag: "flags/sg.png" },
+  { name: "Taiwan", flag: "flags/tw.png" },
+  { name: "Thailand", flag: "flags/th.png" },
   // Add more countries here...
 ];
 
