@@ -7,6 +7,12 @@ h1 {
   color: #333;
 }
 
+img#flagImage {
+  max-width: 200px;
+  max-height: 150px;
+  margin-bottom: 10px;
+}
+
 input[type="text"] {
   padding: 5px;
   font-size: 16px;
