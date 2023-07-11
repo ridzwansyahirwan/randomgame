@@ -1,17 +1,26 @@
+var countries = [
+  { name: "Afghanistan", flag: "flags/af.png" },
+  { name: "Albania", flag: "flags/al.png" },
+  { name: "Algeria", flag: "flags/dz.png" },
+  { name: "Andorra", flag: "flags/ad.png" },
+  { name: "Angola", flag: "flags/ao.png" },
+  // Add more countries here...
+];
+
 function checkGuess() {
-  var userInput = parseInt(document.getElementById("guessInput").value);
-  var randomNumber = Math.floor(Math.random() * 100) + 1;
+  var userInput = document.getElementById("guessInput").value.trim().toLowerCase();
+  var randomCountry = countries[Math.floor(Math.random() * countries.length)];
+
+  var flagImage = document.getElementById("flagImage");
+  flagImage.src = randomCountry.flag;
 
   var resultElement = document.getElementById("result");
 
-  if (userInput === randomNumber) {
+  if (userInput === randomCountry.name.toLowerCase()) {
     resultElement.style.color = "green";
-    resultElement.innerHTML = "Congratulations! You guessed the correct number!";
-  } else if (userInput < randomNumber) {
-    resultElement.style.color = "red";
-    resultElement.innerHTML = "Too low! Try again.";
+    resultElement.innerHTML = "Congratulations! You guessed the correct country!";
   } else {
     resultElement.style.color = "red";
-    resultElement.innerHTML = "Too high! Try again.";
+    resultElement.innerHTML = "Oops! Try again.";
   }
 }
